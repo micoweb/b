@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <center>
+        <div id="mainDiv">
+            <h1 id="main">Digital Vesak Zone</h1>
+            <br>
+            <button class="button" id="vCbutton" onclick="hideMainDiv()">Vesak Cards</button>
+            <br>
+            <br>
+            <a href="vsesakThorana/index.html" class="button" id="vTbutton">Vesak Thoran Rajaya</a>
+        </div>
+
+        <div id="downloadsDiv">
+            <a href="vesakCards/vesakCard.jpg" class="href" download="vesakCard1">Card 1</a>
+            <a href="vesakCards/vesakCard2.avif" class="href" download="vesakCard1">Card 2</a>
+            <a href="vesakCards/vesakCard3.jpg" class="href" download="vesakCard1">Card 3</a>
+            <a href="vesakCards/vesakCard4.jpg" class="href" download="vesakCard1">Card 4</a>
+            <a href="vesakCards/vesakCard5.webp" class="href" download="vesakCard1">Card 5</a> <hr>
+            <button class="button" id="vCbutton" onclick="showMainDiv()">Close</button>
+        </div>
+    </center>
+
+    <script>
+        function hideMainDiv(){
+            document.getElementById("mainDiv").style.display = "none";
+            document.getElementById("downloadsDiv").style.display = "block";
+        }
+        function showMainDiv(){
+            document.getElementById("mainDiv").style.display = "block";
+            document.getElementById("downloadsDiv").style.display = "none";
+        }
+    </script>
+
+    <!-- ©Copyright 2024 Sadew Nethsara -->
+</body>
+
+</html>

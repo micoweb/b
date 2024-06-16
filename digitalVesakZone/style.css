@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+    transition: 1s;
+}
+
+body {
+    background: url("background.jpg");
+    background-size: cover;
+    background-position: center center;
+}
+
+#main{
+    color: white;
+    font-size: 35px;
+}
+
+#downloadsDiv{
+    display: none;
+}
+
+#mainDiv, #downloadsDiv {
+    padding: 20px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: 350px;
+    height: 400px;
+    background: rgba(255, 255, 255, 0.24);
+    border-radius: 36px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(7.8px);
+    -webkit-backdrop-filter: blur(7.8px);
+}
+
+#vTbutton{
+    background: #0077ff;
+    text-decoration:none;
+    color: white;
+    padding: 10px 45px;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 60px;
+    border: none;
+    cursor: pointer;   
+}
+
+#vCbutton{
+    background: #ff0080;
+    text-decoration:none;
+    color: white;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 60px;
+    border: none;
+    cursor: pointer;
+    width: 300px;
+}
+
+#vTbutton:hover{
+    box-shadow: 0 0 60px #0077ff,
+    0 0 120px #0077ff;
+}
+#vCbutton:hover{
+    box-shadow: 0 0 60px #ff0080,
+    0 0 120px #ff0080;
+}
+.href{
+    display: flex;
+    flex-direction: column;
+    background: #0077ff;
+    text-decoration:none;
+    color: white;
+    padding: 10px 45px;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 60px;
+    border: none;
+    cursor: pointer;
+    margin: 5px;   
+}
+
