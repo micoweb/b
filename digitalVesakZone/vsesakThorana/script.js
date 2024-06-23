@@ -130,3 +130,14 @@ function popUpPic8(){
     document.getElementById("fixedPopUp").style.display = "block"
     document.getElementById("popUpPic").src="sources/storyImages(whenPopup)/popUpPic (8).png";
 }
+
+let date = new Date();
+let thisMonth = date.getMonth();
+
+if (thisMonth == 4 | thisMonth < 4) {
+    document.title = "Vesak_Thorana_2024";
+   
+} else if (thisMonth > 4) {
+   
+    document.title = "Poson_Thorana_2024";
+}
