@@ -39,6 +39,21 @@
             document.getElementById("mainDiv").style.display = "block";
             document.getElementById("downloadsDiv").style.display = "none";
         }
+           let date = new Date();
+        let thisMonth = date.getMonth();
+
+        if (thisMonth == 4 | thisMonth < 4) {
+            document.getElementById('main').innerHTML = "Digital Vesak Zone"
+            document.getElementById("vCbutton").style.display = "block";
+            document.getElementById('vTbutton').innerHTML = "Vesak Thoran Rajaya"
+            document.title = "Digital Vesak Zone";
+           
+        } else if (thisMonth > 4) {
+            document.getElementById('main').innerHTML = "Digital Poson Zone"
+            document.getElementById('vTbutton').innerHTML = "Poson Thoran Rajaya"
+            document.getElementById("vCbutton").style.display = "none"; 
+            document.title = "Digital Poson Zone";
+        }
     </script>
 
     <!-- ©Copyright 2024 Sadew Nethsara -->
